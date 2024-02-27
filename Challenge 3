@@ -17,7 +17,7 @@ with open(csv_file, "r") as file:
     # Skip the header row
     next(csv_reader)
 
-    # Loop through each row in the CSV
+    # Go through each row in the CSV
     for row in csv_reader:
         # Count total votes
         total_votes += 1
@@ -36,7 +36,7 @@ with open(csv_file, "r") as file:
 # Create a variable for the results
 results = []
 
-# Iterate through the candidates and calculate their percentage of votes
+# repeat process through the candidates and calculate their percentage of votes
 for candidate, votes in candidates.items():
     percentage = (votes / total_votes) * 100
     results.append((candidate, votes, percentage))
